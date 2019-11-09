@@ -1,0 +1,16 @@
+server:
+  port: 6004
+  
+spring:
+  application:
+    name: zuul-server
+    
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url: {"defaultZone":"http://localhost:6001/eureka/"}
+    
+zuul:
+  routes:
+    {"service1":{"path":"/hello/**", "serviceId":"client-service1"},"service2":{"path":"/test/**", "serviceId":"client-service2"}}
