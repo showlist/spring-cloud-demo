@@ -1,0 +1,20 @@
+server:
+  port: 6005
+  
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url: {"defaultZone":"http://localhost:6001/eureka/"}
+  
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/showlist/spring-cloud-config-repository.git
+          username: wys10162006@126.com
+          password: wys613828
+          default-label: master
