@@ -7,7 +7,14 @@ eureka:
       enabled: true
     service-url:
       {"defaultZone":"http://localhost:6001/eureka/"}
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
       
 spring:
   application:
     name: client-service1
+    
+info:
+  {"app.name":"${spring.application.name}", "bulid.version":"@{project.version}"}
+  

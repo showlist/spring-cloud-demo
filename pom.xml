@@ -37,6 +37,28 @@
   		</dependency>
   	</dependencies>
   </dependencyManagement>
+  
+  <build>
+  <finalName>cloudDemo</finalName>
+  	<resources>
+  		<resource>
+  			<directory>src/main/resources</directory>
+  			<filtering>true</filtering>
+  		</resource>
+  	</resources>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-resources-plugin</artifactId>
+  			<configuration>
+  				<delimiters>
+  					<delimiter>@{*}</delimiter>
+  				</delimiters>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
   <modules>
   	<module>eureak-server</module>
   	<module>client-service1</module>
