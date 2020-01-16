@@ -12,7 +12,7 @@
   </parent>
   
   <properties>
-	<cloud-version>Greenwich.SR3</cloud-version>  
+	<cloud-version>Greenwich.SR4</cloud-version>  
   </properties>
   
   <dependencies>

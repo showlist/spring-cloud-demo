@@ -18,3 +18,14 @@ spring:
           username: wys10162006@126.com
           password: wys613828
           default-label: master
+  rabbitmq:
+    host: 192.168.0.106
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - bus-refresh
