@@ -16,7 +16,7 @@ spring:
         git:
           uri: https://github.com/showlist/spring-cloud-config-repository.git
           username: wys10162006@126.com
-          password: wys613828
+          password: aaaaaaaaaaaaaaaaaaaaaa
           default-label: master
   rabbitmq:
     host: 192.168.0.106
